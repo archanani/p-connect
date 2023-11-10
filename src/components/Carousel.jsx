@@ -35,7 +35,7 @@ export default function Carousel({data}){
     <span className="sloka">Sarwa Mangala Mangalye Sive Sarwardha Sadhike <br/>
     Saranye Trayambike Devi Narayani Namostute
     </span><br/>
-    <p className="contact">We provide below Offerings. Contact <div className="num">9000320768</div> for appointments</p><br/>
+    <div className="contact">We provide below Offerings. Contact <div className="num">9000320768</div> for appointments</div><br/>
     <div className="cards">
     <div class="card">
             <ul>

@@ -29,3 +29,20 @@ h1{
     color: #133926;
     font-weight: bold;
 }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .pc-header {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+    }
+  
+    .logo {
+      margin: 10px 0;
+    }
+  
+    h1 {
+      margin: 10px 0;
+    }
+  }

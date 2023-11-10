@@ -132,3 +132,15 @@ ul li{
     background-color: white;
     animation: number 5s linear 2s infinite alternate;
   }
+
+@media (max-width:768px) {
+    .cards{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        align-items: center;
+    }
+    .contact{
+        text-align: center;
+    }
+}
