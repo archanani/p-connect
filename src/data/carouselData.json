@@ -1,0 +1,28 @@
+{
+    "slides":[
+        {
+            "src": "src\\images\\IMG-1.jpg",
+            "alt": "image 1"
+        },
+        {
+            "src": "src\\images\\IMG-8.jpg",
+            "alt": "image 8"
+        },
+        {
+            "src": "src\\images\\IMG-4.jpg",
+            "alt": "image 3"
+        },
+        {
+            "src": "src\\images\\IMG-5.jpg",
+            "alt": "image 4"
+        },
+        {
+            "src": "src\\images\\IMG-6.jpg",
+            "alt": "image 5"
+        },
+        {
+            "src": "src\\images\\IMG-7.jpg",
+            "alt": "image 6"
+        }
+    ]
+}

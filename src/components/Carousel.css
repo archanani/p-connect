@@ -1,0 +1,134 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+h4{
+    font-family: serif;
+    font-size: 25px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.fl{
+    float: left;
+    color: #133926;
+    font-weight: 600;
+  }
+  
+  
+.fr{
+    float: right;
+    color: #133926;
+    font-weight: 600;
+  }
+
+.carousel{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 350px;
+    align-items: center;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.slide{
+    border-radius: 0.5rem;
+    box-shadow: 0 0 7px #666;
+    width: 100%;
+    height: 100%;
+}
+
+.arrow{
+    position: relative;
+    color: white;
+    height: 2rem;
+    width: 2rem;
+    filter: drop-shadow(0 0 5px #666);
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+
+.arrow-left{
+    left: 3rem;
+}
+
+.arrow-right{
+    right: 3rem;
+}
+
+.indicators{
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.indicator{
+    background-color: white;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px #555;
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+
+.slide-hidden{
+    display:none;
+}
+
+.indicator-inactive{
+    background-color: grey;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: auto;
+    padding: 10px;
+    background-color: #53c68c;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.sloka{
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-shadow: 2px 0px #53c68c;
+}
+
+ul li{
+    list-style-type: none;
+    line-height: 24px;
+    padding: 3px;
+}
+
+.contact{
+    color:maroon;
+    font-weight: bold;
+}
+
+@keyframes number {
+    from {background-color: white;}
+    to {background-color: greenyellow;}
+  }
+  
+  /* The element to apply the animation to */
+  .num {
+    display: inline;
+    background-color: white;
+    animation: number 5s linear 2s infinite alternate;
+  }

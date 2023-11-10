@@ -1,0 +1,31 @@
+.pc-header{
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    width: 100%;
+    background-color: #53c68c;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 2px 2px 2px;
+}
+
+.logo{
+    background-color: #194d33;
+    border-radius: 100%;
+    font-weight: bold;
+    padding: 7px;
+    font-size: 52px;
+    font-family: -webkit-body;
+    color: white;
+    box-shadow: 2px 2px;
+    margin: 10px 0 10px 22px;
+}
+
+h1{
+    font-family: cursive;
+    text-shadow: 2px 2px white;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 21px;
+    color: #133926;
+    font-weight: bold;
+}
