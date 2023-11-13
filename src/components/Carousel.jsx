@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Carousel.css";
 import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs";
 
@@ -14,12 +14,19 @@ export default function Carousel({data}){
         setSlide(slide === 0? data.length-1: slide-1)
     }
     
+    useEffect(()=>{
+        const interValTime = setInterval(()=>{
+            nextSlide();
+        },3000)
+        return ()=>clearInterval(interValTime)
+    },[slide])
+    
     return (
     <div className="main">
         <h4>Sri Matre Namaha</h4>
         <div>
-        <p className='fl'>Go Ganeshaya Namaha</p>
-        <p className='fr'>Go Gurubhyo Namaha</p></div>
+        <p className='fl'>Gam Ganeshaya Namaha</p>
+        <p className='fr'>Sri Gurubhyo Namaha</p></div>
     <div className="carousel">
         <BsArrowLeftCircleFill className="arrow arrow-left" onClick={prevSlide}/>
         {data.map((item,idx)=>{
@@ -37,36 +44,38 @@ export default function Carousel({data}){
     </span><br/>
     <div className="contact">We provide below Offerings. Contact <div className="num">9000320768</div> for appointments</div><br/>
     <div className="cards">
-    <div class="card">
-            <ul>
-                <li>Jataka Pariharalu</li>
-                <li>Match Makings</li>
-                <li>Kuja Dosha Pariharalu</li>
-                <li>Kala Sarpa Dosha Pariharalu</li>
-                <li>EliNati Shani Pariharalu</li>
-                <li>Navagraha Dosha Pariharalu</li>
-            </ul>
-    </div>
-    <div class="card">
-            <ul>
-                <li>Court Disputes</li>
-                <li>Spouse Disputes</li>
-                <li>Financial Disputes</li>
-                <li>Professional Disputes</li>
-                <li>Health Problems</li>
-                <li>Stress/Anxiety</li>
-                <li>Life Hizards</li>
-            </ul>
-    </div>
-  < div class="card">
-            <ul>
-                <li>House Warming Cermony</li>
-                <li>Marriages</li>
-                <li>Naming Cermony</li>
-                <li>Upanayanas</li>
-                <li>Aksharabhyas</li>
-            </ul>
-    </div>
+        <div className="card">
+                <ul>
+                    <li>Jataka Pariharalu</li>
+                    <li>Match Makings</li>
+                    <li>Kuja Dosha Pariharalu</li>
+                    <li>Kala Sarpa Dosha Pariharalu</li>
+                    <li>EliNati Shani Pariharalu</li>
+                    <li>Navagraha Dosha Pariharalu</li>
+                </ul>
+        </div>
+        <div className="card">
+                <ul>
+                    <li>Court Disputes</li>
+                    <li>Spouse Disputes</li>
+                    <li>Financial Disputes</li>
+                    <li>Professional Disputes</li>
+                    <li>Health Problems</li>
+                    <li>Stress/Anxiety</li>
+                    <li>Life Hizards</li>
+                </ul>
+        </div>
+    < div className="card">
+                <ul>
+                    <li>House Warming Cermony</li>
+                    <li>Marriages</li>
+                    <li>Naming Cermony</li>
+                    <li>Upanayanas</li>
+                    <li>Aksharabhyas</li>
+                    <li>Shanti</li>
+                    <li>Vastu</li>
+                </ul>
+        </div>
     </div>
     </div>
     )

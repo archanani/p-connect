@@ -6,6 +6,7 @@
     background-color: #53c68c;
     border-radius: 0 0 5px 5px;
     box-shadow: 2px 2px 2px;
+    justify-content: space-between;
 }
 
 .logo{
@@ -45,4 +46,13 @@ h1{
     h1 {
       margin: 10px 0;
     }
+  }
+
+  .ml{
+    display: flex;
+  }
+
+  .contacts{
+    margin: 20px 15px 0 0;
+    font-weight: 800;
   }
